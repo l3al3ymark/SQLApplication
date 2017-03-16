@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         TodoListDAO todoListDAO = new TodoListDAO(getApplicationContext());
+
         todoListDAO.open();
         ArrayList<TodoList> myList = todoListDAO.getAlltodoList();
 
